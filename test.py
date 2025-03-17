@@ -65,5 +65,5 @@ class TestPriorityQueue(unittest.TestCase):
 if __name__ == "__main__":
   if 'pytest' in sys.modules:
         pass  
-    else:
+  else:
         unittest.main()
