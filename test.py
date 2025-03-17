@@ -60,4 +60,8 @@ class TestPriorityQueue(unittest.TestCase):
     self.assertEqual(pq.pop(), "Task 3")
     self.assertEqual(pq.pop(), "Task 1")
     self.assertIsNone(pq.pop())
-
+if __name__ == "__main__":
+    import sys
+    if 'pytest' not in sys.modules:
+      unittest.main()
+      
