@@ -62,5 +62,5 @@ class TestPriorityQueue(unittest.TestCase):
     self.assertIsNone(pq.pop())
 if __name__ == "__main__":
   import sys
-  if  pytest not in sys.modules:
+  if  "pytest" not in sys.modules:
     unittest.main()
