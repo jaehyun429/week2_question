@@ -1,5 +1,20 @@
 import unittest
 from priority_queue import PriorityQueue
+import heapq
+
+class PriorityQueue:
+    def __init__(self):
+        self.heap = []
+        self.count = 0  
+    def push(self, task, priority):
+        heapq.heappush(self.heap, (priority, self.count, task))
+        self.count += 1
+
+    def pop(self):
+        if self.heap:
+            return heapq.heappop(self.heap)[2]
+        return None
+
 
 class TestPriorityQueue(unittest.TestCase):
 
